@@ -72,7 +72,7 @@ SkyGuardian AI creates a **pre-departure risk intelligence layer** for every fli
 
 ### AI Safety Assistant
 
-![AI Safety Assistant](assistant.png)
+![AI Safety Assistant](assisstant.png)
 
 ## 🏗️ Architecture
 
