@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,300..700;1,300..700&family=Share+Tech+Mono&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #060709;
+  --foreground: #EFEFEE;
+  --surface: #0E1014;
+  --surface-border: rgba(229, 193, 88, 0.05);
+  --color-safety: #34D399;     /* Highly visible Muted Emerald */
+  --color-warning: #FBBF24;    /* Highly visible Antique Amber */
+  --color-critical: #F87171;   /* Highly visible Crimson Rose */
+  --color-accent: #7DD3FC;     /* Highly visible Steel Blue/Cyan for UI data */
+  --text-secondary: #8B8E95;   /* Slate/Graphite gray */
+  --color-brand-gold: #E5C158; /* Branding champagne gold */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-safety: var(--color-safety);
+  --color-warning: var(--color-warning);
+  --color-critical: var(--color-critical);
+  --color-accent: var(--color-accent);
+  --color-text-secondary: var(--text-secondary);
+  --color-brand-gold: var(--color-brand-gold);
+  --font-editorial-hero: 'The Seasons', 'Bodoni Moda', 'Playfair Display', serif;
+  --font-editorial-section: 'Cormorant Garamond', serif;
+  --font-body: 'Libre Baskerville', 'Times New Roman', serif;
+  --font-ui: 'Space Grotesk', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Share Tech Mono', monospace;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Libre Baskerville', 'Times New Roman', serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Atmospheric Noise Overlay (subtle, film grain) */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.012;
+  z-index: 9999;
+  pointer-events: none;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Faint Aviation Grid Overlay */
+.aviation-grid-overlay {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(229, 193, 88, 0.015) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(229, 193, 88, 0.015) 1px, transparent 1px);
+}
+
+/* Luxury Glassmorphic Panel Styling */
+.glass-panel {
+  background: rgba(14, 16, 20, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(229, 193, 88, 0.04);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65);
+}
+
+.glass-panel-heavy {
+  background: rgba(10, 12, 16, 0.9);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(229, 193, 88, 0.08);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8);
+}
+
+/* Operational Glow System (remains highly visible) */
+.neon-glow-normal {
+  box-shadow: 0 0 12px rgba(125, 211, 252, 0.1), inset 0 0 6px rgba(125, 211, 252, 0.02);
+  border-color: rgba(125, 211, 252, 0.18) !important;
+}
+
+.neon-glow-warning {
+  box-shadow: 0 0 15px rgba(251, 191, 36, 0.12), inset 0 0 6px rgba(251, 191, 36, 0.02);
+  border-color: rgba(251, 191, 36, 0.22) !important;
+}
+
+.neon-glow-critical {
+  box-shadow: 0 0 20px rgba(248, 113, 113, 0.15), inset 0 0 8px rgba(248, 113, 113, 0.03);
+  border-color: rgba(248, 113, 113, 0.28) !important;
+}
+
+.neon-glow-accent {
+  box-shadow: 0 0 12px rgba(229, 193, 88, 0.15), inset 0 0 6px rgba(229, 193, 88, 0.04);
+  border-color: rgba(229, 193, 88, 0.2) !important;
+}
+
+/* Animations (slower, smoother, more cinematic) */
+@keyframes radar-sweep {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.radar-sweep-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg at 50% 50%, rgba(229, 193, 88, 0.05) 0deg, rgba(229, 193, 88, 0) 120deg, rgba(229, 193, 88, 0) 360deg);
+  transform-origin: center center;
+  transform: translate(-50%, -50%);
+  animation: radar-sweep 16s linear infinite; /* Slower, more elegant sweep */
+  pointer-events: none;
+}
+
+@keyframes slow-cloud {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.slow-cloud-background {
+  background: radial-gradient(circle at top right, rgba(229, 193, 88, 0.03), transparent 60%),
+              radial-gradient(circle at bottom left, rgba(248, 113, 113, 0.015), transparent 50%),
+              #060709;
+  background-size: 200% 200%;
+  animation: slow-cloud 45s ease infinite; /* Cinematic background shift */
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.96);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(0.96);
+    opacity: 0.5;
+  }
+}
+
+.telemetry-pulse-ring {
+  animation: pulse-ring 3.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes flight-dash {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+.animated-flight-line {
+  stroke-dasharray: 8, 6;
+  animation: flight-dash 6s linear infinite; /* Smoother trail movement */
+}
+
+/* Custom Scrollbar for premium operations look */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #060709;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(229, 193, 88, 0.08);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E5C158;
+}
