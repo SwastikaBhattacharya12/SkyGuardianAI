@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./SkyGuardian%20AI%20banner.png" alt="SkyGuardian AI Banner" width="100%">
+  <img src="./SkGuardian%20AI%20banner.png" alt="SkyGuardian AI Banner" width="100%">
 </p>
 
 # 🛡️ S K Y G U A R D I A N &nbsp; A I
