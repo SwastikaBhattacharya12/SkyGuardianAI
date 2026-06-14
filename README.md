@@ -30,7 +30,9 @@
 
 <div align="center" style="margin-top: 40px; margin-bottom: 40px;">
   <h4>Active Command Center & Operations Dashboard</h4>
-  <img src="docs/screenshots/dashboard.png" alt="SkyGuardian Operations Control Center" width="95%" style="border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 25px 60px rgba(0,0,0,0.8);" />
+  <p align="center">
+    <img src="./dashboard.png" width="100%">
+  </p>
   <p style="font-size: 0.85em; color: #888888; font-style: italic; margin-top: 12px;">Figure 1.0: Real-time airspace radar deck featuring route hazard contours, dynamic flight status indicators, and live airframe health summaries.</p>
 </div>
 
