@@ -82,7 +82,7 @@ Each interface within SkyGuardian AI is crafted following a custom **Luxury Aero
       <div style="background-color: #0E1014; border: 1px solid rgba(229, 193, 88, 0.1); border-radius: 6px; padding: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
         <b style="font-family: 'Cormorant Garamond', serif; font-size: 1.1em; color: #E5C158;">1. Flight Safety Briefing & Audit Deck</b>
         <br/><br/>
-        <img src="docs/screenshots/flight_detail.png" alt="Flight Detail Briefing" width="100%" style="border-radius: 4px; border: 1px solid rgba(255,255,255,0.05);" />
+        <img src="./flight-briefing.png" alt="Flight Detail Briefing" width="100%"> 
         <p style="font-size: 0.8em; color: #999; text-align: left; margin-top: 10px;">Detailed safety logs, segment-by-segment hazard attributions, and composite telemetry trends formatted as an executive document.</p>
       </div>
     </td>
