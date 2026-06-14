@@ -1,6 +1,6 @@
-<div align="center">
-
-<img src="docs/screenshots/landing_page.png" alt="SkyGuardian AI Cinematic Banner" width="100%" style="border-radius: 8px; border: 1px solid rgba(229, 193, 88, 0.25); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75); margin-bottom: 24px;" />
+<p align="center">
+  <img src="./SkyGuardian%20AI%20banner.png" alt="SkyGuardian AI Banner" width="100%">
+</p>
 
 # 🛡️ S K Y G U A R D I A N &nbsp; A I
 ### **Enterprise-Grade Aerospace Safety Assurance & Pre-Departure Risk Intelligence**
