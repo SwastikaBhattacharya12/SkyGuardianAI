@@ -100,7 +100,7 @@ Each interface within SkyGuardian AI is crafted following a custom **Luxury Aero
       <div style="background-color: #0E1014; border: 1px solid rgba(229, 193, 88, 0.1); border-radius: 6px; padding: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
         <b style="font-family: 'Cormorant Garamond', serif; font-size: 1.1em; color: #E5C158;">3. Intelligent RAG Advisor Panel</b>
         <br/><br/>
-        <img src="./assistant.png" width="100%">
+        <img src="./ai-assistant.png" alt="AI Assistant Panel" width="100%">
         <p style="font-size: 0.8em; color: #999; text-align: left; margin-top: 10px;">Natural language assistant with access to weather databases, pilot manuals, and fleet telemetry for automated mitigation advisories.</p>
       </div>
     </td>
@@ -108,7 +108,7 @@ Each interface within SkyGuardian AI is crafted following a custom **Luxury Aero
       <div style="background-color: #0E1014; border: 1px solid rgba(229, 193, 88, 0.1); border-radius: 6px; padding: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
         <b style="font-family: 'Cormorant Garamond', serif; font-size: 1.1em; color: #E5C158;">4. Aircraft Health Structural Schematic</b>
         <br/><br/>
-        <img src="./dashboard.png" width="100%">
+        <img src="./fleet-health.png" alt="Fleet Health Diagnostics" width="100%">
         <p style="font-size: 0.8em; color: #999; text-align: left; margin-top: 10px;">High-resolution diagnostic outline representing engine, nozzle, fuselage, nose cone, and rudder telemetry health scores.</p>
       </div>
     </td>
